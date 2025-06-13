@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 transition-all duration-300 ease-in-out py-3 shadow-2xl">
+    <nav className="w-full fixed top-0 left-0 transition-all duration-300 ease-in-out py-3 shadow-2xl bg-amber-50 z-50">
       <div className="container text-center mx-auto ">
         {/* desktop */}
         <div className="hidden md:flex items-center justify-between ">
