@@ -17,7 +17,6 @@ const Home = () => {
       {/* Features */}
       <Features />
       {/* commmunity */}
-      {/* <Community /> */}
     </div>
   );
 };
