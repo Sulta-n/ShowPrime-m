@@ -1,11 +1,14 @@
 import React from "react";
 import Tab from "../../public/images/tab.png";
 import Phone from "../../public/images/phone.png";
-import { Mail } from "lucide-react";
+import { Apple, Mail } from "lucide-react";
+import { BsAndroid, BsYoutube } from "react-icons/bs";
+import { SiPrime } from "react-icons/si";
+import { TbBrandDisney } from "react-icons/tb";
 
 const HomeSection = () => {
   return (
-    <section className="min-h-screen relative mt-20 lg:mt-0">
+    <section className="min-h-screen relative mt-20 lg:mt-0 md:mb-36 lg:my-0">
       {" "}
       <div className="hidden lg:block absolute w-[600px] h-[700px] bg-card1 p-0.5 -top-33 -right-32 rounded-3xl transform -rotate-[34.4deg] translate-y-2 translate-x-5  shadow-xl z-1"></div>
       <div className="hidden lg:block absolute w-[600px] h-[700px] bg-card2 p-0.5 -top-25 -right-35 rounded-3xl transform -rotate-[43deg] -translate-y-1 translate-x-5"></div>
@@ -22,11 +25,23 @@ const HomeSection = () => {
               ever again
             </p>
             {/* buttons */}
-            <div className="flex items-center justify-center md:space-x-4.5 lg:mt-32 lg:justify-start">
-              <button className="flex bg-blue-100 p-2.5 rounded-2xl items-center justify-center">
+            <div className="flex items-center justify-center md:space-x-4.5 lg:mt-32 lg:justify-start space-x-2">
+              <button className="flex bg-blue-300 p-2.5 rounded-2xl items-center justify-center text-navBg">
                 <Mail className="pr-3" size={30} /> Enter your email
               </button>
               <a className="bg-card1 p-3 rounded-2xl">Start Tracking</a>
+            </div>
+            <div className="hidden lg:flex lg:flex-col lg:items-start lg:space-y-2">
+              <p className="text-black/50 tracking-wider uppercase">
+                Compatible with
+              </p>
+              <div className="flex space-x-2.5 items-center justify-center opacity-70">
+                <BsAndroid />
+                <SiPrime />
+                <Apple />
+                <TbBrandDisney />
+                <BsYoutube />
+              </div>
             </div>
           </div>
           {/* second */}

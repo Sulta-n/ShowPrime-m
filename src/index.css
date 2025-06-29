@@ -4,6 +4,13 @@
   --color-primary: hsl(var(--pink));
   --background-image-card1: var(--card1);
   --background-image-card2: var(--card2);
+  --background-image-ytube: var(--ytube);
+  --background-image-abacus: var(--abacus);
+  --background-image-noti: var(--noti);
+  --color-background: var(--background);
+  --color-textC: var(--textC);
+  --color-navBg: var(--navBg);
+  --color-community: var(--community);
 }
 
 @layer base {
@@ -11,6 +18,19 @@
     --pink: 341 97% 61% / 1;
     --card1: linear-gradient(179.93deg, #fc3a79 24.7%, #ff2205 106.83%);
     --card2: linear-gradient(180.17deg, #3d37ed 20.91%, #08e6e6 90.13%);
+    --ytube: linear-gradient(179.93deg, #fc3a79 24.7%, #ff2205 106.83%);
+    --abacus: linear-gradient(180.17deg, #3d37ed 20.91%, #08e6e6 90.13%);
+    --noti: linear-gradient(179.93deg, #ff039e 24.7%, #e604ff 106.83%);
+    --background: #fff;
+    --textC: #000;
+    --navBg: #fff;
+    --community: rgb(26, 25, 25);
+  }
+
+  .dark {
+    --background: #000;
+    --textC: #cbc5c5;
+    --navBg: #000000;
   }
 
   html {
@@ -18,6 +38,10 @@
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  body {
+    @apply bg-background text-textC transition-colors duration-300;
   }
 }
 
