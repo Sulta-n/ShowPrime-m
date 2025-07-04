@@ -43,7 +43,7 @@ const moreTestimonials = [
   },
 ];
 
-const Community = () => {
+const Commun = () => {
   return (
     <section className="min-h-screen relative  bg-community flex items-center justify-center overflow-hidden">
       <div className="container max-w-8xl mx-auto text-center  ">
@@ -97,4 +97,4 @@ const Community = () => {
   );
 };
 
-export default Community;
+export default Commun;
