@@ -19,16 +19,19 @@ const HomeSection = () => {
               Track your shows <br />
               Automatically
             </h1>
-            <p className="text-sm lg:text-left capitalize text-[20px] text-black/40">
+            <p className="text-sm lg:text-left capitalize text-[20px] text-textC/40">
               with showPrime you can track your favorite TV shows <br />{" "}
               automatically, so you never loose track of your TV shows <br />{" "}
               ever again
             </p>
             {/* buttons */}
             <div className="flex items-center justify-center md:space-x-4.5 lg:mt-32 lg:justify-start space-x-2">
-              <button className="flex bg-blue-300 p-2.5 rounded-2xl items-center justify-center text-navBg">
-                <Mail className="pr-3" size={30} /> Enter your email
-              </button>
+              <a
+                className="flex bg-blue-300 p-2 rounded-2xl items-center justify-center text-navBg whitespace-nowrap "
+                href="#final"
+              >
+                <Mail className="pr-1.5" size={30} /> Enter your email
+              </a>
               <a className="bg-card1 p-3 rounded-2xl">Start Tracking</a>
             </div>
             <div className="hidden lg:flex lg:flex-col lg:items-start lg:space-y-2">

@@ -9,6 +9,7 @@
   --background-image-noti: var(--noti);
   --color-background: var(--background);
   --color-textC: var(--textC);
+  --color-textB: var(--textB);
   --color-navBg: var(--navBg);
   --color-community: var(--community);
 }
@@ -24,12 +25,14 @@
     --background: #fff;
     --textC: #000;
     --navBg: #fff;
+    --textB: #000;
     --community: rgb(26, 25, 25);
   }
 
   .dark {
     --background: #000;
     --textC: #cbc5c5;
+    --textB: #ffff;
     --navBg: #000000;
   }
 
